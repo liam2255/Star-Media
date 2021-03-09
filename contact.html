@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Local Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Link to custom stylesheet -->
+    <link href="css/customCho.css" rel="stylesheet">
+
+    <title>Contact</title>
+	
+  </head>
+
+ <body>
+  
+	 <!-- Navigation Bar -->
+	 <div id="nav">
+		<img src="img/logo.png" alt="Choozah Logo" width="140px" height="140px">
+
+			<!-- Webpage Sections -->
+			<ul> 
+				<li><a href="index.html">Home</a></li>
+				<li><a href="search.html">Search</a></li>
+				<li><a href="viewAll.html">View All</a></li>
+				<li><a class="active" href="contact.html">Contact Us</a></li>
+			</ul>			
+			<!-- End of Webpage Sections -->
+	</div>
+	<!-- End of Navigation Bar -->
+
+
+
+	<div id="site"> <!-- Added Container which will include everything (Header Image + Main content), useful if we need to set style rules to the
+						whole page, etc -->
+
+		<!-- Header Image -->
+		<div id="header"> 
+			<h1> Choozah WebApp </h1>
+		</div>
+		<!--  End of Header Image -->
+
+  
+		<!-- Main Content -->
+		<div id="mainContent">
+			<div id="contactUs"> <!-- Home Content-->
+				<h1>Contact Us!</h1>
+				<div id="contactForm">
+					<form>
+						<!-- Name -->
+					<div class="mb-3">
+						<label for="InputName" class="form-label">Enter your name</label>
+						<input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+					</div>
+						<!-- Email -->
+					<div class="mb-3">
+						<label for="InputEmail1" class="form-label">Enter your name</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+					</div>
+						<!-- Message -->
+					<div class="mb-3">
+						<label for="Message" class="form-label">Enter your message</label>
+						<textarea class="form-control" id="message" placeholder="Enter your message" required></textarea>
+						</div>	
+					<button type="submit" id="btnForm">Submit</button>
+					</form>
+				</div>
+			</div>			
+		</div>
+		<!-- End of Main Content -->
+ 	</div> 	
+
+	<div id="footer">
+		<p>©2021 - Choozah | Galway, Ireland</p>
+	</div>
+</body>
+
+</html>

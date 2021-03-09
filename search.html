@@ -1,0 +1,251 @@
+<!-- Choozah Project (DM7) - Project Management - Search Page -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Local Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Link to custom stylesheet -->
+    <link href="css/customCho.css" rel="stylesheet">
+
+    <title>Search</title>
+	
+  </head>
+
+ <body>
+	 <!-- Navigation Bar -->
+	 <div id="nav">
+		<img src="img/logo.png" alt="Choozah Logo" width="140px" height="140px">
+
+			<!-- Webpage Sections -->
+			<ul> 
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="search.html">Search</a></li>
+				<li><a href="viewAll.html">View All</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>			
+			<!-- End of Webpage Sections -->
+	</div>
+	<!-- End of Navigation Bar -->
+
+
+
+	<div id="site"> <!-- Added Container which will include everything (Header Image + Main content), useful if we need to set style rules to the
+						whole page, etc -->
+
+		<!-- Header Image -->
+		<div id="header"> 
+			<h1> Choozah WebApp </h1>
+		</div>
+		<!--  End of Header Image -->
+	
+		<!-- Main Content -->
+		<div id="mainContent">
+			<div id="searchContent"> <!-- Home Content-->
+				<h1>Tell us what you're interested in and we'll show you where to go!</h1>
+
+				<div class= "row">
+					<div class="interestContainer">
+						<button class="btnSearch" onclick="filterSelection('history')">History</button>
+						<button class="btnSearch" onclick="filterSelection('cinema')">Cinema</button>
+						<button class="btnSearch" onclick="filterSelection('reading')">Reading</button>
+						<button class="btnSearch" onclick="filterSelection('gastronomy')">Food & Beverages</button>
+						<button class="btnSearch" onclick="filterSelection('arts')">Arts & Theatre</button>
+						<button class="btnSearch" onclick="filterSelection('sports')">Sports</button>
+					</div>	
+				</div>
+				
+				
+				 <!-- Interests Cards -->
+				 <div class="row">
+					<!-- col sm is the max amount of rows md is for a medium sized page 12/6 = 2 per column 
+					lg is 12/4 = 3 per column
+					space-top is a class made inside the text, used in custom css-->
+
+				
+				<!-- History Locations -->
+
+					<!-- Galway Museum -->
+					<div class="filterDiv history">
+						<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+							<div class="card" style="width: 18rem;">
+								<img src="img/mus.jpg" class="card-img-top" alt="mus">
+								<div class="card-body">
+									<h5 class="card-title">Galway Museum</h5>
+									<p class="card-text">It was founded on 29 July 2006, and is located beside the Spanish Arch</p>
+									<a href="#" class="btn btn-primary">Go here</a>
+								</div>
+							</div>
+						</div> 
+					</div>
+					<!-- End of Galway Museum-->
+
+					<!-- Galway Docks -->
+					<div class="filterDiv history">
+						<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+							<div class="card" style="width: 18rem;">
+								<img src="img/dock.jpg" class="card-img-top" alt="dock">
+								<div class="card-body">
+									<h5 class="card-title">Docks</h5>
+									<p class="card-text">The Port of Galway has a history dating back to the 10th Century, serving the city in shipping and its associated activities</p>
+									<a href="#" class="btn btn-primary">Go here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Galway Docks-->
+
+					<!-- Spanish Arch -->
+					<div class="filterDiv history">
+						<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+							<div class="card" style="width: 18rem;">
+								<img src="img/arch.jpg" class="card-img-top" alt="dock">
+								<div class="card-body">
+									<h5 class="card-title">Spanish Arch</h5>
+									<p class="card-text">The famous Spanish Arch, Built in 1584, Originally named Eyre Arch sits where Galway's river meets the sea.  </p>
+									<a href="#" class="btn btn-primary">Go here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of Spanish Arch-->
+					
+					<!-- Galway Cathedral-->
+					<div class="filterDiv history"> 
+						<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+							<div class="card" style="width: 18rem;">
+								<img src="img/cath.jpg" class="card-img-top" alt="dock">
+								<div class="card-body">
+									<h5 class="card-title">Cathedral</h5>
+									<p class="card-text">Galway city is home to the youngest stone cathedral in Europe, finished in 1965.</p>
+									<a href="#" class="btn btn-primary">Go here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of Galway Cathedral-->
+
+					<!-- Lynchs Castle -->
+					<div class="filterDiv history">
+						<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+							<div class="card" style="width: 18rem;">
+								<img src="img/lync.jpg" class="card-img-top" alt="dock">
+								<div class="card-body">
+									<h5 class="card-title">Lynchs Castle</h5>
+									<p class="card-text">Home the the famous/infamous James Lynch who hanged his own son for the murder of a Spanish sailor</p>
+									<a href="#" class="btn btn-primary">Go here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of Lynchs Castle -->
+				<!-- End of History Locations -->
+
+				<!-- Gastronomy Locations -->
+					<!-- Sheridans -->
+					<div class="filterDiv gastronomy">
+							<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+								<div class="card" style="width: 18rem;">
+									<img src="img/sher.jpg" class="card-img-top" alt="sher">
+									<div class="card-body">
+										<h5 class="card-title">Sheridans</h5>
+										<p class="card-text">Your friendly local in Knocknacarra, Galway city. Serving delicious food and drinks</p>
+										<a href="#" class="btn btn-primary">Go here</a>
+									</div>
+								</div>
+							</div>
+					</div>
+					<!-- End of Sheridans -->
+
+					<!-- O'Connors -->
+					<div class="filterDiv gastronomy">
+						<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+							<div class="card" style="width: 18rem;">
+								<img src="img/conn.jpg" class="card-img-top" alt="dock">
+								<div class="card-body">
+									<h5 class="card-title">O'Connors Pub</h5>
+									<p class="card-text">Cosy bar, opened in 1942, with bric-a-brac on the walls and ceiling, outdoor seating and live music.</p>
+									<a href="#" class="btn btn-primary">Go here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of O'Connors -->
+
+					<!-- Caravans -->
+					<div class="filterDiv gastronomy">
+						<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+							<div class="card" style="width: 18rem;">
+								<img src="img/gara.jpg" class="card-img-top" alt="dock">
+								<div class="card-body">
+									<h5 class="card-title">Garavans Bar</h5>
+									<p class="card-text">Garavan's is a comfortable bar, ideal for a few pints in a relaxed atmosphere</p>
+									<a href="#" class="btn btn-primary">Go here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of Caravans -->
+				<!-- End of Gastronomy Locations -->
+
+				<!-- Cinema Locations -->
+				
+			
+				<!-- End of Cinema Locations -->
+				
+				<!-- Reading Locations -->
+
+				<!-- End of Reading Locations -->
+
+				<!-- Arts Locations -->
+				
+				<!-- End of Arts Locations -->
+
+				<!-- Sports Locations -->
+					<div class="filterDiv sports">
+						<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+							<div class="card" style="width: 18rem;">
+								<img src="img/esca.jpg" class="card-img-top" alt="dock">
+								<div class="card-body">
+									<h5 class="card-title">Great Escape Rooms</h5>
+									<p class="card-text">See if ypu can escape our puzzle rooms in 60 minutes.</p>
+									<a href="#" class="btn btn-primary">Go here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="filterDiv sports">
+						<div class="col-sm-12 col-md-6 col-lg-4 space-top">
+							<div class="card" style="width: 18rem;">
+								<img src="img/axe.jpg" class="card-img-top" alt="dock">
+								<div class="card-body">
+									<h5 class="card-title">Indoor Axe Throwing</h5>
+									<p class="card-text">Tom O' Hawks is the West of Ireland's biggest and best Indoor Axe Throwing Range.</p>
+									<a href="#" class="btn btn-primary">Go here</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- End of Sports Locations -->
+				</div>	<!-- end Rows -->
+			</div>			
+		</div>
+		<!-- End of Main Content -->
+	</div>
+
+	<div id="footer">
+		<p>©2021 - Choozah | Galway, Ireland</p>
+	</div>
+
+	<!--Linking HTML with JavaScript-->
+	<script src="js/Cho_script.js"></script>  
+</body>
+ 
+</html>
