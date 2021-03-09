@@ -1,0 +1,296 @@
+/* Choozah Project (DM7) - Project Management - Custom CSS */
+
+/* Fonts Used */
+@import url('https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
+/* General CSS Rules - Applied to all elements */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#site {
+	width: 85%;
+	margin-left: 15%;
+}
+
+/* Style Rules for Header */
+#header {
+	background-color: #264653;
+	height: 180px;
+}
+
+#header h1 {
+	text-align: center;
+	padding-top: 50px;
+	font-family: 'Ravi Prakash', cursive;
+	text-shadow: 3px 4px #2A9D8F;
+	font-size: 100px;
+	color: #E9C46A;
+	letter-spacing: 5px;
+}
+/* End of Style Rules for Header */
+
+/* Style Rules for Navigation Bar */
+#nav {
+	background-color: #264653;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 15%; 
+	overflow-y: hidden;
+}
+
+#nav ul {
+	list-style-type: none;
+	height: 30px;
+	height: 100vh;
+}
+
+#nav li {
+	margin-top: 10px;
+	margin-left: 5px;
+	width: 90%;
+	text-align: center;
+	border-bottom-style: solid;
+	border-color: #2A9D8F;
+}
+
+#nav a {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	text-align: center;
+	font-size: 25px;
+	display: block; /* makes whole area clickable */
+	color: #E9C46A;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: "Times New Roman", Arial, sans-serif;
+}
+
+#nav a:hover {
+	background-color: #FFBA08;
+	color: #15112C;
+}
+
+.active {
+	background-color: #2A9D8F;
+}
+
+
+/* End of Style Rules for Navigation Bar */
+
+
+/* Home Page */
+#homeContent {
+	height: 450px;
+	background-color: #ee9457;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#homeContent h1 {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 50px;
+	color: #264653;
+	letter-spacing: 5px;
+}
+
+#homeContent h2 {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 40px;
+	color: #264653;
+	letter-spacing: 3px;
+}
+
+#homeContent h3 {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 30px;
+	color: #264653;
+	letter-spacing: 3px;
+}
+
+#homeContent p {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 24px;
+	color: #264653;
+	letter-spacing: 3px;
+}
+
+#homeContent a{
+	color: #2A9D8F;
+	text-decoration: none;
+}
+
+#homeContent a:hover{
+	color: red;
+}
+/* End of Home Page */
+
+
+/* Search Page */
+#searchContent {
+	background-color: #ee9457;
+	padding: 5%;
+}
+
+#searchContent h1{
+	text-align: center;
+	padding: 30px;
+	padding-top: 20px;
+	font-size: 50px;
+	color: #264653;
+}
+
+.interestContainer {
+	margin: 30px auto;
+}
+
+.btnSearch{
+	background-color: #264653; 
+	border: none;
+	color: #E9C46A;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+
+}
+
+.btnSearch:hover {
+	background-color: #E9C46A;
+	color: #264653;
+  }
+  
+/* End of Search Page */
+
+
+/* View All Page */
+#viewAllContent {
+	padding: 5%;
+	background-color: #ee9457;
+}
+
+.containerViewAll {
+	border: black solid 2px;
+	margin-left: 100px;
+	text-align: center;
+	margin: 24px;
+	display: none;
+	background-color: white;
+}
+
+.btn {
+	border: black solid 1px;
+	outline: none;
+	padding: 12px 16px;
+	cursor: pointer;
+	margin-left:18px;
+	background-color: #264653;
+	color: #E9C46A;
+	font-weight: bold;
+  }
+/* End of View All Page */
+
+
+
+/* Interests Cards */
+.card{
+	margin-top: 30px;
+}
+
+.card img{
+	height: 200px;
+	width: 286px;
+}
+
+.filterDiv {
+  border: black solid 2px;
+  margin-left: 100px;
+  text-align: center;
+  margin: 24px;
+  display: none;
+  background-color: white;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-color: #E9C46A;
+}
+
+.btn .active {
+  background-color: #90EE90;
+  color: white;
+  font-weight: bold;
+}
+/* End of Interests Cards */
+
+
+/* Contact us */
+
+#contactUs {
+	background-color: #ee9457;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#contactUs h1 {
+	padding-top: 50px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-size: 50px;
+	color: #264653;
+	letter-spacing: 5px;
+	text-shadow: 3px 4px #E9C46A;
+}
+
+#contactForm {
+	width: 80%;
+	font-size: 24px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+#btnForm{
+		background-color: #264653; 
+	border: none;
+	color: #E9C46A;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+}
+/* End of Contact Us */
+
+
+
+/* Footer */
+#footer {
+	width: 85%;
+	height: 110px;
+	margin-left: 15%;
+	background-color: #E9C46A;
+}
+
+#footer p {
+	padding-top: 60px;
+	font-size: 18px;
+	float: right; 
+}
+/* End of Footer */
+
