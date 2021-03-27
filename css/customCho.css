@@ -18,17 +18,18 @@
 /* Style Rules for Header */
 #header {
 	background-color: #264653;
-	height: 180px;
+	height: 160px;
 }
 
 #header h1 {
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 30px;
 	font-family: 'Ravi Prakash', cursive;
 	text-shadow: 3px 4px #2A9D8F;
 	font-size: 100px;
 	color: #E9C46A;
 	letter-spacing: 5px;
+
 }
 /* End of Style Rules for Header */
 
@@ -71,6 +72,17 @@
 	font-family: "Times New Roman", Arial, sans-serif;
 }
 
+/* width="140px" height="140px" */
+
+#nav img{
+	width:140px;
+	height:140px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right:10px;
+}
+
 #nav a:hover {
 	background-color: #FFBA08;
 	color: #15112C;
@@ -86,7 +98,7 @@
 
 /* Home Page */
 #homeContent {
-	height: 450px;
+	height:700px;/* Couldn't get height % to work, this is a fix if we don't use another method */
 	background-color: #ee9457;
 	font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -138,6 +150,8 @@
 #searchContent {
 	background-color: #ee9457;
 	padding: 5%;
+	padding-bottom:20%;
+	
 }
 
 #searchContent h1{
@@ -178,6 +192,16 @@
 	background-color: #ee9457;
 }
 
+#viewAllHeader{
+	padding-left:20px;
+	border-bottom: 5px solid black;
+	text-align: center;
+	padding: 30px;
+	padding-top: 20px;
+	font-size: 50px;
+	color: #264653;
+}
+
 .containerViewAll {
 	border: black solid 2px;
 	margin-left: 100px;
@@ -192,7 +216,7 @@
 	outline: none;
 	padding: 12px 16px;
 	cursor: pointer;
-	margin-left:18px;
+	text-align: center;
 	background-color: #264653;
 	color: #E9C46A;
 	font-weight: bold;
@@ -211,6 +235,10 @@
 	width: 286px;
 }
 
+.card-text{/* This targets the paragraph box in cards. Sets a height so text doesn't make its own size */
+	height:100px;
+}
+
 .filterDiv {
   border: black solid 2px;
   margin-left: 100px;
@@ -218,6 +246,15 @@
   margin: 24px;
   display: none;
   background-color: white;
+}
+
+.viewAllCards{/* Needed to make a separate command for the ViewAll Cards because they were tied with FilterDiv, can copy all FilterDiv elements into here so their alike */
+	  border: black solid 2px;
+	    background-color: white;
+		margin-top:20px;
+		  text-align: center;
+  margin: 24px;
+	  
 }
 
 .show {
@@ -246,6 +283,7 @@
 #contactUs {
 	background-color: #ee9457;
 	font-family: 'PT Sans Narrow', sans-serif;
+	padding-bottom:10%;
 }
 
 #contactUs h1 {
@@ -294,3 +332,58 @@
 }
 /* End of Footer */
 
+
+/* Start of Slide Buttons */
+.wrapper button {
+  font-size: 1em;
+  background: #3498db;
+  color: #fff;
+  border: 0.05rem solid #3498db;
+  padding: 0.20em 0.15em;
+
+
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top:10px;
+}
+.wrapper button:hover {
+  color: #3498db;
+}
+.wrapper button::after {
+  content: "";
+  background: #ecf0f1;
+  position: absolute;
+  z-index: -1;
+  padding: 0.20em 0.15em;
+  display: block;
+}
+.wrapper button[class^="slide"]::after {
+  transition: all 0.35s;
+}
+.wrapper button[class^="slide"]:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+.wrapper button.slide_from_left::after {
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+}
+.wrapper button.slide_from_right::after {
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: -100%;
+
+}
+
+.slide_from_right{
+	  margin-left:79px;
+}
+/* End of Slide Buttons */
